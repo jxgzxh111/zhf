@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:text="@string/register_text" />
+
+    <Button
+        android:id="@+id/btn_register_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="28dp"
+        android:text="@string/back_text" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:text="@string/register_text" />
+
+    <EditText
+        android:id="@+id/invite_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_register"
+        android:layout_alignLeft="@+id/email_text"
+        android:layout_marginBottom="42dp"
+        android:ems="10"
+        android:hint="@string/register_invite_hint"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/pwd_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pwd_text2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:hint="@string/login_pwd_hint"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/email_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pwd_text"
+        android:layout_alignLeft="@+id/pwd_text"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:hint="@string/login_email_hint"
+        android:inputType="textEmailAddress" >
+     <requestFocus />
+     </EditText>
+
+    <EditText
+        android:id="@+id/pwd_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/invite_email"
+        android:layout_alignLeft="@+id/pwd_text"
+        android:layout_marginBottom="29dp"
+        android:ems="10"
+        android:hint="@string/register_pwd_again_hint"
+        android:inputType="textPassword" >
+
+       
+    </EditText>
+
+</RelativeLayout>
